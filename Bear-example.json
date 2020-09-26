@@ -1,0 +1,1610 @@
+{
+    "resources": [
+        {
+            "name": "cost",
+            "bonus": "none",
+            "requires": [
+            ]
+        },
+        {
+            "name": "cal",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 0.004,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "leather",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 0.6,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "log",
+            "bonus": "logging",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 0.1,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "hewn",
+            "bonus": "logging",
+            "requires": [
+                {
+                    "name": "log",
+                    "count": 2,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 6,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "board",
+            "bonus": "logging",
+            "requires": [
+                {
+                    "name": "hewn",
+                    "count": 0.3333,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 2,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "nails",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 0.07,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "lumber",
+            "bonus": "carpentry",
+            "requires": [
+                {
+                    "name": "nails",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "hewn",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 12,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "plantFibre",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 0.05,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "cell fibre",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 0.05,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "cloth",
+            "bonus": "tailoring",
+            "requires": [
+                {
+                    "name": "plantFibre",
+                    "count": 3,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 10,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "iron",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 0.9,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "advanced upgrade 3",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 35,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "advanced upgrade 4",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "advanced upgrade 3",
+                    "count": 1,
+                    "bonus": false
+                },
+                {
+                    "name": "iron plate",
+                    "count": 6,
+                    "bonus": true
+                },
+                {
+                    "name": "iron piston",
+                    "count": 8,
+                    "bonus": true
+                },
+                {
+                    "name": "lumber",
+                    "count": 12,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 30,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "iron plate",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "iron",
+                    "count": 1.0,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 20,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "iron pipe",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 1.0,
+                    "bonus": false
+                },
+                {
+                    "name": "cal",
+                    "count": 20,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "iron piston",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "iron",
+                    "count": 2.0,
+                    "bonus": true
+                },
+                {
+                    "name": "iron pipe",
+                    "count": 2.0,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 20,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "iron wheel",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "iron",
+                    "count": 6.0,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 32,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "iron axle",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "iron",
+                    "count": 2.0,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 24,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "boiler",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "iron plate",
+                    "count": 14.5,
+                    "bonus": true
+                },
+                {
+                    "name": "screw",
+                    "count": 10,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 60,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "screw",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "iron",
+                    "count": 0.25,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 7,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "iron gear",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "iron",
+                    "count": 1,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 24,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "gearbox",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "iron",
+                    "count": 2,
+                    "bonus": true
+                },
+                {
+                    "name": "iron gear",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 24,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "steam engine",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "iron piston",
+                    "count": 12,
+                    "bonus": true
+                },
+                {
+                    "name": "screw",
+                    "count": 30,
+                    "bonus": true
+                },
+                {
+                    "name": "iron plate",
+                    "count": 23,
+                    "bonus": true
+                },
+                {
+                    "name": "boiler",
+                    "count": 6,
+                    "bonus": true
+                },
+                {
+                    "name": "iron gear",
+                    "count": 16,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 150,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "portable steam engine",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "iron piston",
+                    "count": 8,
+                    "bonus": true
+                },
+                {
+                    "name": "screw",
+                    "count": 18,
+                    "bonus": true
+                },
+                {
+                    "name": "iron plate",
+                    "count": 12,
+                    "bonus": true
+                },
+                {
+                    "name": "boiler",
+                    "count": 3,
+                    "bonus": true
+                },
+                {
+                    "name": "iron gear",
+                    "count": 12,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 400,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "steam truck",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "iron pipe",
+                    "count": 8,
+                    "bonus": true
+                },
+                {
+                    "name": "screw",
+                    "count": 23,
+                    "bonus": true
+                },
+                {
+                    "name": "iron plate",
+                    "count": 12,
+                    "bonus": true
+                },
+                {
+                    "name": "leather",
+                    "count": 19,
+                    "bonus": true
+                },
+                {
+                    "name": "lumber",
+                    "count": 29,
+                    "bonus": true
+                },
+                {
+                    "name": "portable steam engine",
+                    "count": 1,
+                    "bonus": false
+                },
+                {
+                    "name": "iron wheel",
+                    "count": 4,
+                    "bonus": false
+                },
+                {
+                    "name": "iron axle",
+                    "count": 1,
+                    "bonus": false
+                },
+                {
+                    "name": "cal",
+                    "count": 200,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "screening machine",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "screw",
+                    "count": 15,
+                    "bonus": true
+                },
+                {
+                    "name": "iron",
+                    "count": 38,
+                    "bonus": true
+                },
+                {
+                    "name": "iron gear",
+                    "count": 10,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 100,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "stamp mill",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "screw",
+                    "count": 14,
+                    "bonus": true
+                },
+                {
+                    "name": "iron",
+                    "count": 5,
+                    "bonus": true
+                },
+                {
+                    "name": "iron gear",
+                    "count": 8,
+                    "bonus": true
+                },
+                {
+                    "name": "board",
+                    "count": 14,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 40,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "tractor plow",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "iron plate",
+                    "count": 8,
+                    "bonus": true
+                },
+                {
+                    "name": "screw",
+                    "count": 18,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 40,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "butchery table",
+            "bonus": "carpentry",
+            "requires": [
+                {
+                    "name": "log",
+                    "count": 14.5,
+                    "bonus": true
+                },
+                {
+                    "name": "board",
+                    "count": 20,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 100,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "copper",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 1.0,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "gold",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 1.0,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "steel",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 1.5,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "gold flakes",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "gold",
+                    "count": 0.5,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 24,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "copper wire",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "copper",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 20,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "oil product",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 0.75,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "epoxy",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "oil product",
+                    "count": 1,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "plastic",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "oil product",
+                    "count": 1,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "rubber",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "oil product",
+                    "count": 1,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "fibreglass",
+            "bonus": "oil drilling",
+            "requires": [
+                {
+                    "name": "plastic",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "glass",
+                    "count": 3,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 15,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "glass",
+            "bonus": "glasswork",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 0.6,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "substraight",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "fibreglass",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "epoxy",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 20,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "circuit",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "copper wire",
+                    "count": 6,
+                    "bonus": true
+                },
+                {
+                    "name": "gold flakes",
+                    "count": 10,
+                    "bonus": true
+                },
+                {
+                    "name": "substraight",
+                    "count": 2,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 14,
+                    "bonus": false
+                }
+            ]
+        },
+        {"name": "gold wire",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "gold",
+                    "count": 2,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 40,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "advanced circuit",
+            "bonus": "electronics",
+            "requires": [
+                {
+                    "name": "copper wire",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "gold wire",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "gold flakes",
+                    "count": 10,
+                    "bonus": true
+                },
+                {
+                    "name": "substraight",
+                    "count": 2,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 14,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "motor",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "circuit",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "copper wire",
+                    "count": 10,
+                    "bonus": true
+                },
+                {
+                    "name": "steel",
+                    "count": 8,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 120,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "servo",
+            "bonus": "electronics",
+            "requires": [
+                {
+                    "name": "circuit",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "fibreglass",
+                    "count": 10,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 20,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "robotic assembly",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "motor",
+                    "count": 5,
+                    "bonus": true
+                },
+                {
+                    "name": "servo",
+                    "count": 12,
+                    "bonus": true
+                },
+                {
+                    "name": "cement",
+                    "count": 30,
+                    "bonus": true
+                },
+                {
+                    "name": "steel",
+                    "count": 30,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 400,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "cement",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 0.05,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "composite lumber",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "plastic",
+                    "count": 1,
+                    "bonus": true
+                },
+                {
+                    "name": "epoxy",
+                    "count": 1,
+                    "bonus": true
+                },
+                {
+                    "name": "log",
+                    "count": 1,
+                    "bonus": true
+                },
+                {
+                    "name": "lumber",
+                    "count": 1,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 40,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "composite lumber chair",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "screw",
+                    "count": 6,
+                    "bonus": true
+                },
+                {
+                    "name": "composite lumber",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 60,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "composite lumber door",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "screw",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "composite lumber",
+                    "count": 2,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 60,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "composite lumber bench",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "screw",
+                    "count": 6,
+                    "bonus": true
+                },
+                {
+                    "name": "composite lumber",
+                    "count": 6,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 60,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "composite lumber table",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "screw",
+                    "count": 10,
+                    "bonus": true
+                },
+                {
+                    "name": "composite lumber",
+                    "count": 6,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 60,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "modern upgrade 4",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "modern upgrade 3",
+                    "count": 1,
+                    "bonus": false
+                },
+                {
+                    "name": "composite lumber",
+                    "count": 12,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 400,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "modern upgrade 3",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "modern upgrade 2",
+                    "count": 1,
+                    "bonus": false
+                },
+                {
+                    "name": "circuit",
+                    "count": 8,
+                    "bonus": true
+                },
+                {
+                    "name": "plastic",
+                    "count": 15,
+                    "bonus": true
+                },
+                {
+                    "name": "epoxy",
+                    "count": 10,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 40,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "modern upgrade 2",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "modern upgrade 1",
+                    "count": 1,
+                    "bonus": false
+                },
+                {
+                    "name": "steel plate",
+                    "count": 16,
+                    "bonus": true
+                },
+                {
+                    "name": "steel gear",
+                    "count": 10,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 40,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "modern upgrade 1",
+            "bonus": "mechanic",
+            "requires": [
+                {
+                    "name": "steel",
+                    "count": 6,
+                    "bonus": true
+                },
+                {
+                    "name": "rivet",
+                    "count": 20,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 40,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "steel gear",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "steel",
+                    "count": 2,
+                    "bonus": false
+                },
+                {
+                    "name": "epoxy",
+                    "count": 1,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 20,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "steel plate",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "steel",
+                    "count": 3,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 40,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "steel axle",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "steel",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "epoxy",
+                    "count": 3,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 20,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "heat sink",
+            "bonus": "mechanic",
+            "requires": [
+                {
+                    "name": "copper",
+                    "count": 8,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 20,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "rubber wheel",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "rubber",
+                    "count": 8,
+                    "bonus": true
+                },
+                {
+                    "name": "steel",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 20,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "radiator",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "heat sink",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "copper wire",
+                    "count": 8,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 12,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "combustion engine",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "iron piston",
+                    "count": 6,
+                    "bonus": true
+                },
+                {
+                    "name": "gearbox",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "iron plate",
+                    "count": 12,
+                    "bonus": true
+                },
+                {
+                    "name": "rivet",
+                    "count": 8,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 100,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "truck",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "gearbox",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "cell fibre",
+                    "count": 8,
+                    "bonus": true
+                },
+                {
+                    "name": "steel plate",
+                    "count": 16,
+                    "bonus": true
+                },
+                {
+                    "name": "combustion engine",
+                    "count": 1,
+                    "bonus": false
+                },
+                {
+                    "name": "rubber wheel",
+                    "count": 4,
+                    "bonus": false
+                },
+                {
+                    "name": "radiator",
+                    "count": 1,
+                    "bonus": false
+                },
+                {
+                    "name": "steel axle",
+                    "count": 1,
+                    "bonus": false
+                },
+                {
+                    "name": "cal",
+                    "count": 300,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "skid skeer",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "gearbox",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "cell fibre",
+                    "count": 8,
+                    "bonus": true
+                },
+                {
+                    "name": "steel plate",
+                    "count": 16,
+                    "bonus": true
+                },
+                {
+                    "name": "advanced combustion engine",
+                    "count": 1,
+                    "bonus": false
+                },
+                {
+                    "name": "rubber wheel",
+                    "count": 4,
+                    "bonus": false
+                },
+                {
+                    "name": "radiator",
+                    "count": 2,
+                    "bonus": false
+                },
+                {
+                    "name": "steel axle",
+                    "count": 1,
+                    "bonus": false
+                },
+                {
+                    "name": "cal",
+                    "count": 300,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "advanced combustion engine",
+            "bonus": "industry",
+            "requires": [
+                {
+                    "name": "rivet",
+                    "count": 12,
+                    "bonus": true
+                },
+                {
+                    "name": "valve",
+                    "count": 6,
+                    "bonus": true
+                },
+                {
+                    "name": "steel plate",
+                    "count": 16,
+                    "bonus": true
+                },
+                {
+                    "name": "iron piston",
+                    "count": 6,
+                    "bonus": true
+                },
+                {
+                    "name": "servo",
+                    "count": 6,
+                    "bonus": true
+                },
+                {
+                    "name": "advanced circuit",
+                    "count": 6,
+                    "bonus": true
+                },
+                {
+                    "name": "radiator",
+                    "count": 3,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 300,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "steel pipe",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 1.6,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "steel gearbox",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "steel",
+                    "count": 8,
+                    "bonus": true
+                },
+                {
+                    "name": "steel gear",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 32,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "valve",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "steel pipe",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "steel plate",
+                    "count": 4,
+                    "bonus": true
+                },
+                {
+                    "name": "steel gearbox",
+                    "count": 1,
+                    "bonus": false
+                },
+                {
+                    "name": "cal",
+                    "count": 20,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "rivet",
+            "bonus": "mechanics",
+            "requires": [
+                {
+                    "name": "steel",
+                    "count": 0.333,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 9.33,
+                    "bonus": false
+                }
+            ]
+        }
+    ],
+    "bonuses": [
+        {
+            "name": "logging",
+            "bonus_size": 0.5
+        },
+        {
+            "name": "carpentry",
+            "bonus_size": 0.5
+        },
+        {
+            "name": "tailoring",
+            "bonus_size": 0.5
+        },
+        {
+            "name": "mechanics",
+            "bonus_size": 0.5
+        },
+        {
+            "name": "industry",
+            "bonus_size": 0.45
+        },
+        {
+            "name": "electronics",
+            "bonus_size": 0.5
+        },
+        {
+            "name": "glasswork",
+            "bonus_size": 0.0
+        }
+    ],
+    "price_check": [
+        {
+            "item": "hewn",
+            "explain": false
+        },
+        {
+            "item": "cloth",
+            "explain": true
+        },
+        {
+            "item": "advanced upgrade 4",
+            "explain": false,
+            "parts": true
+        },
+        {
+            "item": "boiler"
+        },
+        {
+            "item": "steam engine",
+            "parts": true
+        },
+        {
+            "item": "screening machine",
+            "parts": true
+        },
+        {
+            "item": "stamp mill",
+            "parts": true
+        },
+        {
+            "item": "tractor plow"
+        },
+        {
+            "item": "butchery table"
+        },
+        {
+            "item": "steam truck",
+            "parts": true
+        },
+        {
+            "item": "motor",
+            "parts": true
+        },
+        {
+            "item": "robotic assembly",
+            "parts": true
+        },
+        {
+            "item": "modern upgrade 1",
+            "parts": false
+        },
+        {
+            "item": "modern upgrade 2",
+            "parts": false
+        },
+        {
+            "item": "modern upgrade 3",
+            "parts": false
+        },
+        {
+            "item": "modern upgrade 4",
+            "parts": false
+        },
+        {
+            "item": "composite lumber",
+            "parts": true
+        },
+        {
+            "item": "composite lumber door",
+            "parts": true
+        },
+        {
+            "item": "composite lumber chair",
+            "parts": true
+        },
+        {
+            "item": "composite lumber bench",
+            "parts": true
+        },
+        {
+            "item": "composite lumber table",
+            "parts": true
+        },
+        {
+            "item": "truck",
+            "parts": true,
+            "count": 1
+        },
+        {
+            "item": "truck",
+            "parts": true,
+            "count": 5
+        }
+        ,
+        {
+            "item": "rivet",
+            "parts": true,
+            "count": 1
+        },
+        {
+            "item": "skid skeer",
+            "parts": true,
+            "count": 4
+        }
+    ]
+}

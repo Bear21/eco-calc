@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "EcoPrices": {
+      "commandName": "Project",
+      "commandLineArgs": "../../../Bear-example.json"
+    }
+  }
+}

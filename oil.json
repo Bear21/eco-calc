@@ -1,0 +1,112 @@
+{
+    "resources": [
+        {
+            "name": "cost",
+            "bonus": "none",
+            "requires": [
+            ]
+        },
+        {
+            "name": "cal",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 0.004,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "iron",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 0.8,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "barrel",
+            "bonus": "electronic machinist table",
+            "requires": [
+                {
+                    "name": "iron",
+                    "count": 1,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 36,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "petrol",
+            "bonus": "oil",
+            "requires": [
+                {
+                    "name": "barrel",
+                    "count": 1,
+                    "bonus": false
+                },
+                {
+                    "name": "cal",
+                    "count": 36,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "oilbased product",
+            "bonus": "oil",
+            "requires": [
+                {
+                    "name": "barrel",
+                    "count": -1.5,
+                    "bonus": true
+                },{
+                    "name": "petrol",
+                    "count": 2,
+                    "bonus": true
+                }
+            ] 
+        }
+    ],
+    "bonuses": [
+        {
+            "name": "oil",
+            "bonus_size": 0.5
+        },
+        {
+            "name": "electronic machinist table",
+            "bonus_size": 0.45
+        }
+    ],
+    "price_check": [
+        {
+            "item": "cal",
+            "parts": true
+        },
+        {
+            "item": "iron",
+            "parts": true
+        },
+        {
+            "item": "barrel",
+            "parts": true,
+            "explain": true
+        },
+        {
+            "item": "petrol",
+            "parts": true
+        },
+        {
+            "item": "oilbased product",
+            "parts": true
+        }
+    ]
+}
