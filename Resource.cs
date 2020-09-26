@@ -21,17 +21,18 @@ namespace EcoPrices
       [DataMember(Name = "name")]
       public string name;
       [DataMember(Name = "bonus")]
-      public Bonus bonus;
-      public (string, double, bool)[] requires;
+      public string bonus;
+      [DataMember(Name = "requires")]
+      public Requires[] requires;
 
-      public Resource(string name, Bonus bonus, (string, double, bool)[] requires = default)
+      public Resource(string name, string bonus, Requires[] requires = default)
       {
          this.name = name ?? throw new ArgumentNullException(nameof(name));
          this.bonus = bonus ?? throw new ArgumentNullException(nameof(bonus));
          this.requires = requires;
       }
 
-      public (string, double, bool)[] GetResources()
+      public Requires[] GetResources()
       {
          return requires;
       }

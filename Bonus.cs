@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Runtime.Serialization;
 
 namespace EcoPrices
 {
+   [DataContract(Name = "bonus")]
    class Bonus
    {
+      [DataMember(Name = "name")]
       public string name;
+      [DataMember(Name = "bonus_size")]
       public double bonusSize;
       public Bonus(string name, double size)
       {
@@ -19,16 +23,16 @@ namespace EcoPrices
    {
       static Bonuses()
       {
-         bonuses = new List<Bonus>();
+         bonuses = new Dictionary<string, double>();
 
       }
 
-      public static List<Bonus> bonuses;
+      public static Dictionary<string, double> bonuses;
       public static double ApplyBonus(Resource res, double count)
       {
-         if (bonuses.Contains(res.bonus))
+         if (bonuses.ContainsKey(res.bonus))
          {
-            return count * res.bonus.bonusSize;
+            return count * bonuses[res.bonus];
          }
          return count;
       }
