@@ -1,0 +1,168 @@
+{
+    "resources": [
+        {
+            "name": "cost",
+            "bonus": "none",
+            "requires": [
+            ]
+        },
+        {
+            "name": "cal",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 0.2,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "log",
+            "bonus": "logging",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 10,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "hewn",
+            "bonus": "logging",
+            "requires": [
+                {
+                    "name": "log",
+                    "count": 2,
+                    "bonus": true
+                },
+                {
+                    "name": "cal",
+                    "count": 6,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "board",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 15,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "brick",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 65,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "nails",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 15,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "leather",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 100,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "lumber",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 70,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "plantFibre",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 2,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "cell fibre",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 10,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "cloth",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 60,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "iron",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 155,
+                    "bonus": false
+                }
+            ]
+        },
+        {
+            "name": "nail",
+            "bonus": "none",
+            "requires": [
+                {
+                    "name": "cost",
+                    "count": 15,
+                    "bonus": false
+                }
+            ]
+        }
+    ],
+    "bonuses": [
+        {
+            "name": "mechanics",
+            "bonus_size": 0.45
+        },
+        {
+            "name": "anvil",
+            "bonus_size": 0.5
+        }
+    ]
+}

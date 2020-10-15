@@ -50,6 +50,19 @@ namespace EcoPrices
          }
          else
          {
+            Config baseConfig;
+            try
+            {
+               using (var fs = System.IO.File.OpenRead("base.json"))
+               {
+                  DataContractJsonSerializer deser = new DataContractJsonSerializer(typeof(Config));
+                  baseConfig = deser.ReadObject(fs) as Config;
+               }
+            }
+            catch (System.IO.FileNotFoundException ex)
+            {
+               baseConfig = null;
+            }
             try
             {
                Config sd;
@@ -63,12 +76,39 @@ namespace EcoPrices
                {
                   Bonuses.bonuses.Add(bonus.name, 1.0 - bonus.bonusSize);
                }
+               // Add base after override.
+               if (baseConfig != null)
+               {
+                  foreach (var bonus in baseConfig.bonuses)
+                  {
+                     try
+                     {
+                        Bonuses.bonuses.Add(bonus.name, 1.0 - bonus.bonusSize);
+                     }
+                     catch (ArgumentException)
+                     {
+                     }
+                  }
+               }
                Dictionary<string, Resource> dictionary = new Dictionary<string, Resource>();
                foreach (var resource in sd.resources)
                {
                   dictionary.Add(resource.name, resource);
                }
-
+               // Add base after override.
+               if (baseConfig != null)
+               {
+                  foreach (var resource in baseConfig.resources)
+                  {
+                     try 
+                     {
+                        dictionary.Add(resource.name, resource);
+                     }
+                     catch (ArgumentException)
+                     {
+                     }
+                  }
+               }
                foreach (var price in sd.priceCheck)
                {
                   Dictionary<string, double> parts = new Dictionary<string, double>();
